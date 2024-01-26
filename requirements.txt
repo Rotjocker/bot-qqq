@@ -1,5 +1,0 @@
-telebot
-requests
-os
-threading
-flask
