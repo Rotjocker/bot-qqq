@@ -51,18 +51,7 @@ def tt():
 
             bot.send_photo(id,open(img_name,"rb") , caption=f"صفحه رقم : {text}")
             os.remove(img_name)
-    if "/p9i_u" in text:
-      if str(id) in open("on.txt").read().split("\n"):
-        e=text.replace("/p9i_u","")
-        s=e.replace(" ","")
-        vcd=open('e.txt','w')  
-        vcd.write(str(s)+'\n')
-        vcd.close()
-
-        bot.send_message(id,"بدت الاذاعه مطوري ")
-        os.system("python3 z.py")
-      else:
-        pass
+    
         
         
        
