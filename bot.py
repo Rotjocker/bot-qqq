@@ -20,11 +20,7 @@ def tt():
     id = message.from_user.id
     a = message.from_user.first_name
     b = message.from_user.username
-    if str(id) in open("id.txt").read().split("\n"):
-      pass
-    else :
-      r=open("id.txt","a")
-      r.write(str(id)+"\n")
+    
     channel = "vlod2" #قناتك
     x =re.get(f"https://api.telegram.org/bot{g}/getChatMember?chat_id=@vlod2&user_id={id}").text
     if x.count("left") or x.count("Bad Request: user not found"):
